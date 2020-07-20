@@ -2,6 +2,7 @@
 #define BINARY_TREE_H
 /*Includes*/
 #include <stddef.h>
+#include <stdlib.h>
 
 /*Structs*/
 /**

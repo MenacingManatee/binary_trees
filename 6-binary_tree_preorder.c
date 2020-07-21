@@ -14,6 +14,11 @@ void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 		return;
 	traverse(tree, func);
 }
+/**
+ * traverse - traverses a binary tree, performing a function on the nodes
+ * @tree: pointer to the current node
+ * @func: function to perform
+ */
 void traverse(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree != NULL)

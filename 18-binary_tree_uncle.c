@@ -1,12 +1,17 @@
-#include <stdio.h>
+#include "binary_trees.h"
 
 /**
- * main - 
+ * binary_tree_uncle - finds the sibling of the parent of a node
+ * @node: node to find the uncle of
  *
- * Return: Always 0 (ok)
+ * Return: uncle of the node
  */
-int main(void)
+binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
-	
-	return (0);
+	if (node == NULL || node->parent == NULL || node->parent->parent ==
+	    NULL)
+		return (NULL);
+	if (node->parent->parent->left == node->parent)
+		return (node->parent->parent->right);
+	return (node->parent->parent->left);
 }

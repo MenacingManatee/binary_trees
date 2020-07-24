@@ -10,6 +10,7 @@
 int tree_check(const binary_tree_t *tree)
 {
 	int a, b;
+
 	if (tree == NULL)
 		return (1);
 	if (tree->left)

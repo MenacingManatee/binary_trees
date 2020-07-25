@@ -32,6 +32,12 @@ size_t tree_height(const binary_tree_t *tree)
 		return (count1 + 1);
 	return (count2 + 1);
 }
+/**
+ * half_nodes - counts the nodes with only one child
+ * @tree: pointer to the root node of the tree to measure the size
+ *
+ * Return: the size of a binary tree, or 0 on failure
+ */
 size_t half_nodes(const binary_tree_t *tree)
 {
 	if (tree == NULL)
